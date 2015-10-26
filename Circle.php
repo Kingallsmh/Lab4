@@ -5,8 +5,7 @@
  * Date: 10/23/15
  * Time: 7:28 AM
  */
-require("Shape.php");
-require("growShrink.php");
+
 class Circle extends Shape implements growShrink{
 
 

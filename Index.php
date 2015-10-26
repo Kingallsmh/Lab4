@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php
+    include("Shape.php");
     include("Circle.php");
     include("Triangle.php");
     include("Rectangle.php");

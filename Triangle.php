@@ -5,8 +5,7 @@
  * Date: 10/23/15
  * Time: 7:55 AM
  */
-require("Shape.php");
-require("growShrink.php");
+
 class Triangle extends Shape implements growShrink{
 
     public function __construct($in_base, $in_height){

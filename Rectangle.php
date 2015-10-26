@@ -5,7 +5,7 @@
  * Date: 10/23/15
  * Time: 7:50 AM
  */
-require("Shape.php");
+
 class Rectangle extends Shape{
 
 
