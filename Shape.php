@@ -8,15 +8,17 @@
 
 abstract class Shape {
 
-    protected $shapeName;
-    protected $shapeArea;
-    protected $shapeWidth;
-    protected $shapeHeight;
+    public $shapeName;
+    public $shapeArea;
+    public $shapeWidth;
+    public $shapeHeight;
     abstract public function CalculateSize($in_width, $in_height);
 
     public function __construct($in_name){
     $this->shapeName = $in_name;
 
     }
+
+
 
 }

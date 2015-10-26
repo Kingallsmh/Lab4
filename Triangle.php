@@ -5,8 +5,9 @@
  * Date: 10/23/15
  * Time: 7:55 AM
  */
-
-class Triangle extends Shape{
+require("Shape.php");
+require("growShrink.php");
+class Triangle extends Shape implements growShrink{
 
     public function __construct($in_base, $in_height){
         $this->shapeName = "Triangle";
@@ -16,6 +17,11 @@ class Triangle extends Shape{
 
     public function CalculateSize($shapeWidth, $shapeHeight)
     {
-        $this->shapeArea = ($shapeWidth * $shapeHeight)/2;
+        return ($shapeWidth * $shapeHeight)/2;
+    }
+
+    public function adjustSize($shapeBase, $adjustment)
+    {
+        return $shapeBase * ($adjustment/100);
     }
 }

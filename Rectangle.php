@@ -5,7 +5,7 @@
  * Date: 10/23/15
  * Time: 7:50 AM
  */
-
+require("Shape.php");
 class Rectangle extends Shape{
 
 
@@ -17,6 +17,6 @@ class Rectangle extends Shape{
 
     public function CalculateSize($shapeWidth, $shapeHeight)
     {
-        $this->shapeArea = $shapeWidth * $shapeHeight;
+        return $shapeWidth * $shapeHeight;
     }
 }
